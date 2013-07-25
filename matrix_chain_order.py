@@ -3,7 +3,7 @@ def matrix_chain_order(p):
     m = [[0 for j in range(0,n+1)] for i in range(0,n+1)]
     s = [[0 for j in range(0,n+1)] for i in range(0,n)]
     for i in range(1,n+1):
-        m[i][j] = 0
+        m[i][i] = 0
     for l in range(2,n+1):
         for i in range(1,n-l+2):
             j = i+l-1
