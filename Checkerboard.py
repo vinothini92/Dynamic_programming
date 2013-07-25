@@ -11,13 +11,14 @@ def max_cost(a,n):
     for i in range(n):
         if max < cost[0][i]:
             max = cost[0][i]
+    print "maximum cost=",max
     print "Cost Table:"     
     for i in range(n):
         for j in range(n):
             print "%8d"%(cost[i][j]),
         print ""
     print "\n"
-    print "Maximum Profit:",cost[0][n-1]
+ 
 
 def max_pro(rs,i,j,n):
     if j==0 :
